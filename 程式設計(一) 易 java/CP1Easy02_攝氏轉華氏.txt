@@ -1,0 +1,12 @@
+import java.util.*;
+
+class main{
+	public static void main(String args[]){
+	Scanner sc = new Scanner(System.in);
+	
+		int c = sc.nextInt();
+		System.out.printf("C=%d\r\n",c);
+		System.out.printf("F=%d\r\n",(c*9/5)+32);
+	
+	}
+}

@@ -1,0 +1,13 @@
+import java.util.*;
+
+class main{
+	public static void main(String args[]){
+	Scanner sc = new Scanner(System.in);
+	
+	int m = sc.nextInt(); //¿é¤Jm
+	int n = sc.nextInt(); //¿é¤Jn
+	
+	System.out.printf("%d / %d = %d\r\n",m,n,(m/n));
+	System.out.printf("%d mod %d = %d\r\n",m,n,(m%n));
+	}
+}

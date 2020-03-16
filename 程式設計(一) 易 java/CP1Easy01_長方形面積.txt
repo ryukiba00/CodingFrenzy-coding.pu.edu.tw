@@ -1,0 +1,13 @@
+import java.util.*;
+
+class main{
+	public static void main(String args[]){
+	Scanner sc = new Scanner(System.in);
+	
+	int l = sc.nextInt(); // 輸入整數長l，Length
+	int w = sc.nextInt(); // 輸入整數寬w，Width
+	
+	System.out.println(l*w);
+	
+	}
+}
