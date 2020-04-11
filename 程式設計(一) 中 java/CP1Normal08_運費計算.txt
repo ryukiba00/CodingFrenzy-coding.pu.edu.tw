@@ -1,0 +1,20 @@
+import java.util.*;
+
+class main{
+	public static void main(String args[]){
+	Scanner sc = new Scanner(System.in);
+	
+	double l = sc.nextDouble(); // 輸入貨品長(L)
+	double w = sc.nextDouble(); // 輸入貨品寬(W)
+	double h = sc.nextDouble(); // 輸入貨品高(H)
+	
+	if ((l+w+h) <= 200){ // L+W+H <= 200
+		System.out.println(100);
+	}else if ((l+w+h) <= 500 ){ // 200 < L+W+H <= 500
+		System.out.println(200);
+	}else{ // L+W+H > 500
+		System.out.println((int)((l+w+h)*0.5)); // 使用int強制轉換，可省去四捨五入的狀況
+	}
+	
+	}
+}

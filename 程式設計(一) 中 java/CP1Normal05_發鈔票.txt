@@ -1,0 +1,21 @@
+import java.util.*;
+class main{
+	public static void main(String args[]){
+	Scanner sc = new Scanner(System.in);
+	
+	int N = sc.nextInt(); // 璝Τ璶眖蝗︽烩Nじ
+	int arr[] = new int[5]; //5皚纗┮惠秗布眎计
+	
+	arr[4] = N/100; // 100じ眎计
+	N=N%100;
+	arr[3] = N/50; // 50じ计
+	N=N%50;
+	arr[2] = N/10; // 10じ计
+	N=N%10;
+	arr[1] = N/5; // 5じ计
+	N=N%5;
+	arr[0] = N/1; // 1じ计
+	
+	System.out.printf("1-%d, 5-%d, 10-%d, 50-%d, 100-%d",arr[0],arr[1],arr[2],arr[3],arr[4]);
+	}
+}

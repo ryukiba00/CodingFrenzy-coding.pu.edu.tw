@@ -1,0 +1,22 @@
+import java.util.*;
+
+class main{
+	public static void main(String args[]){
+	Scanner sc = new Scanner(System.in);
+	
+	double h = sc.nextDouble(); // 輸入身高(公尺)
+	double w = sc.nextDouble(); // 輸入體重(公斤)
+	double BMI = w/Math.pow(h,2); //計算出BMI；Math.pow()為次方函數，後面2為次方數
+	
+	System.out.printf("%.4f\r\n",BMI); // 題目要求為保留小數4位數
+	
+	if (BMI < 18.5){
+		System.out.println("too thin");
+	}else if(BMI < 24){
+		System.out.println("standard");
+	}else{
+		System.out.println("too fat");
+	}
+	
+	}
+}

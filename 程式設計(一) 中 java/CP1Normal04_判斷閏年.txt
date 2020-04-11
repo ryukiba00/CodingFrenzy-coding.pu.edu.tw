@@ -1,0 +1,24 @@
+import java.util.*;
+
+class main{
+	public static void main(String args[]){
+	Scanner sc = new Scanner(System.in);
+	
+	int N = sc.nextInt(); // 輸入西元年數
+	String ans = ""; // 宣告一個字串ans，以存取最終解答
+	
+	
+	if ( N%4 == 0 ){ // 四年一閏
+		ans = "Yes";
+		if ( N%100 == 0 ){ // 逢百不閏
+			ans = "No";
+		}
+		if ( N%400 == 0){ // 逢四百又閏
+			ans = "Yes";
+		}
+	}else{
+		ans = "No";
+	}
+	System.out.println(ans);
+	}
+}

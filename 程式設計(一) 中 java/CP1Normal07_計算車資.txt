@@ -1,0 +1,23 @@
+import java.util.*;
+
+class main{
+	public static void main(String args[]){
+	Scanner sc = new Scanner(System.in);
+	
+	int m = sc.nextInt(); // 俱计mń祘 (そへ) 计
+	int n = 80; // 俱计n惠ó戈
+	
+	if ( m == 0 ){ // ń祘计0
+		n = 0;
+	}else if ( m <= 1500 ){ // ń祘计1500そへず琌80じ
+		n = 80;
+	}else{ // 禬筁1500そへ
+		n += 5*((m-1500)/500); // 禬筁1500そへ
+		m = (m-1500)%500;
+		if ( m > 0 ){ // 狦ぃì500そへ500そへ璸
+			n += 5;
+		}
+	}
+	System.out.println(n);
+	}
+}

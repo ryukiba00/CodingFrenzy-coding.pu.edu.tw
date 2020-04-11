@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class main{
+	public static void main(String args[]){
+		Scanner sc = new Scanner(System.in);
+		char GPA = sc.next().charAt(0);
+		/* 你的程式碼 */
+		switch(GPA){
+			case 'A':System.out.println("above 90");break;
+			case 'B':System.out.println("between 80 and 89");break;
+			case 'C':System.out.println("between 70 and 79");break;
+			case 'D':System.out.println("between 60 and 69");break;
+			default:System.out.println("fail");
+		}
+	}
+}

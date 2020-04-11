@@ -1,0 +1,22 @@
+import java.util.*;
+
+class main{
+	public static void main(String args[]){
+	Scanner sc = new Scanner(System.in);
+	
+	int a = sc.nextInt(); //輸入a
+	int b = sc.nextInt(); //輸入b
+	int c = sc.nextInt(); //輸入c
+	
+	// 宣告一個最大值max，因為懶得多比一個，直接存a
+	int max = a;
+	
+	if (max < b){
+		max = b;
+	}
+	if(max < c){
+		max = c;
+	}
+	System.out.println(max);
+	}
+}

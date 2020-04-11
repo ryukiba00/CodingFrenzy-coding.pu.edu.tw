@@ -1,0 +1,32 @@
+import java.util.*;
+
+class main {
+    public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    
+    double x1 = sc.nextDouble(); // 第1點x座標
+    double y1 = sc.nextDouble(); // 第1點y座標
+    double x2 = sc.nextDouble(); // 第2點x座標
+    double y2 = sc.nextDouble(); // 第2點y座標
+    
+    double x = (x1+x2)/2; // x座標的中點 
+    double y = (y1+y2)/2; // y座標的中點
+
+    if ( x == 0 && y == 0 ){ // 表示中點是(0,0)
+    	System.out.println("origin");
+    }else if( y == 0 ){ // 表示中點在x軸上
+    	System.out.println("x-axis");
+    }else if( x == 0 ){ // 表示中點在y軸上
+    	System.out.println("y-axis");
+    }else if( x > 0 && y > 0 ){ // 表示中點在第一象限
+    	System.out.println("First quadrant");
+    }else if( x < 0 && y > 0 ){ // 表示中點在第二象限
+    	System.out.println("Second quadrant");
+    }else if( x < 0 && y < 0 ){ // 表示中點在第三象限
+    	System.out.println("Third quadrant");
+    }else if( x > 0 && y < 0 ){ // 表示中點在第四象限
+    	System.out.println("Fourth quadrant");
+    }
+    
+    }
+}
