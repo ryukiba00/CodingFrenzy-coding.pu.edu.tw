@@ -1,0 +1,25 @@
+import java.util.*;
+
+class main{
+	public static void main(String args[]){
+	Scanner sc=new Scanner(System.in);
+	
+	int s = sc.nextInt(),d = 0;
+	System.out.println("Sub Total:"+s);
+	
+	if(s>9999){ // Math.ceil()為四捨五入函數
+		System.out.printf("Discount:"+(d=(int)Math.ceil((s*0.45)))+"\r\n"
+						+"Total:"+(s-d)+"\r\n");
+	}else if(s>4999){
+		System.out.printf("Discount:"+(d=(int)Math.ceil((s*0.4)))+"\r\n"
+						+"Total:"+(s-d)+"\r\n");
+	}else if(s>1999){
+		System.out.printf("Discount:"+(d=(int)Math.ceil((s*0.3)))+"\r\n"
+						+"Total:"+(s-d)+"\r\n");
+	}else{
+		System.out.print("Discount:"+0+"\r\n"
+						+"Total:"+s+"\r\n");
+	}
+	
+	}
+}
