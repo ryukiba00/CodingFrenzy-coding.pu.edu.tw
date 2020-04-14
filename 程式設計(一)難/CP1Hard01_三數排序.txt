@@ -1,0 +1,31 @@
+import java.util.*;
+
+class main{
+	public static void main(String args[]){
+	Scanner sc = new Scanner(System.in);
+	
+	// 輸入三個正整數a、b、c
+	int a = sc.nextInt();
+	int b = sc.nextInt();
+	int c = sc.nextInt();
+	
+	// 由小到大
+	if ( b < a ){
+		int temp = a;
+		a = b;
+		b = temp;
+	}
+	if ( c < b ){
+		int temp = b;
+		b = c;
+		c = temp;
+	}
+	if ( b < a ){ // 再比一次b和a, 避免更換後的大小仍有誤
+		int temp = a;
+		a = b;
+		b = temp;
+	}
+	
+	System.out.println(a+" "+b+" "+c);
+	}
+}

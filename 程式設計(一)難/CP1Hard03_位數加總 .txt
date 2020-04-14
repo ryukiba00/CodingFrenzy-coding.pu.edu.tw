@@ -1,0 +1,25 @@
+import java.util.*;
+
+class main{
+	public static void main(String argas[]){
+	Scanner sc = new Scanner(System.in);
+	
+	// 一個正整數n
+	int n = sc.nextInt();
+	
+	// 宣告一個總和變數sum
+	int sum = 0;
+	
+	// 如果大於10，則將n的位數加總；加總後如還大於10，則重複相同步驟直到小於10為止。
+	do {
+		sum = 0; // 須重置sum，避免不斷加大。
+		while ( n > 0 ) {
+			sum += n % 10;	
+			n = n / 10;
+		}
+		n = sum;
+	}while( sum >= 10 );
+	
+	System.out.println(sum);
+	}
+}

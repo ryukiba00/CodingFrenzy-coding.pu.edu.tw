@@ -1,0 +1,45 @@
+import java.util.*;
+class main {
+    public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    
+    // 輸入數字a, b, c(資料型態為double)
+    double a = sc.nextDouble();
+    double b = sc.nextDouble();
+    double c = sc.nextDouble();
+    
+    // 先做大小處理
+	if (a > b){
+		double temp = a;
+		a = b;
+		b = temp;
+	}
+	if (b > c){
+		double temp = b;
+		b = c;
+		c = temp;
+	}
+	
+
+    // 輸出以a, b, c為三邊長的三角形類型(英文)
+    
+    if ( (a <= 0 || b <= 0 || c <= 0) || ( ( a + b ) <= c ) ){
+    	System.out.println("not a triangle");
+    } else if ( a == b && b == c ){
+    	System.out.println("regular triangle");
+    } else if ( a == b || b == c ){
+    	if ( ( a*a + b*b ) == c*c ){
+    		System.out.println("isosceles righttriangle");
+    	}else{
+    		System.out.println("isosceles triangle");
+    	}
+    } else if ( ( a*a + b*b ) == c*c ){
+    	System.out.println("rectangular triangle");
+    } else if ( ( a*a + b*b ) < c*c ){
+    	System.out.println("obtuse triangle");
+    } else if ( ( a*a + b*b ) > c*c ){
+    	System.out.println("acute triangle");
+    }
+    
+	}
+}
