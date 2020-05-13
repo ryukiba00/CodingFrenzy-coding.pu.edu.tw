@@ -1,0 +1,17 @@
+import java.util.*;
+
+class main{
+	public static void main(String args[]){
+	Scanner sc = new Scanner(System.in);
+	
+	// 輸入正整數n
+	int n = sc.nextInt();
+	// 數字超過12時會爆炸, 故使用long
+	long even = 1;
+	
+	for(int i = 1 ; i <= n; i++ ){
+		even *= i;
+	}	
+	System.out.println(even);
+	}
+}

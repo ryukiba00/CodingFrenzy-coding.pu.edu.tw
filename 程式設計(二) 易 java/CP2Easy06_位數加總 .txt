@@ -1,0 +1,28 @@
+import java.util.*;
+
+class main{
+	public static void main(String args[]){
+	Scanner sc = new Scanner(System.in);
+	
+	// 輸入正整數n
+	int n = sc.nextInt();
+	
+	int sum = 0;
+	
+	do {
+		sum += (n%10);
+		n /= 10;
+		if (n == 0){
+			if(sum > 10 ){
+				n = sum;
+				sum = 0;
+			}else{
+				break;
+			}
+		}
+	}while( n != 0 );
+	
+	System.out.println(sum);
+	
+	}
+}

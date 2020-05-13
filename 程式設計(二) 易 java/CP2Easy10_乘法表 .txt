@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int M=sc.nextInt();
+        int N=sc.nextInt();
+        
+        // 調整大小
+        if ( M > N ){
+        	int temp = M;
+        	M = N;
+        	N = temp;
+        }
+        
+        for ( int i = M ; i <= N  ; i++ ){
+        	for ( int j = M; j <= N ; j++ ){
+        		System.out.printf("%d*%d=%d\t",i,j,(i*j));
+        	}
+        	System.out.println();
+        }
+    }
+}

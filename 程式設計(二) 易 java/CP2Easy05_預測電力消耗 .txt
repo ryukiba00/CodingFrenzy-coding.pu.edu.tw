@@ -1,0 +1,18 @@
+import java.util.*;
+
+class main{
+	public static void main(String args[]){
+	Scanner sc = new Scanner(System.in);
+	
+	// 輸入浮點數x, 因為是百分比, 要除100
+	float x = sc.nextFloat();
+	x /= 100;
+	// 輸出y年
+	int y = 0;
+	
+	while( Math.pow(1-x,y) >= 0.75 ){
+		y += 1;
+	}
+	System.out.println(y);
+	}
+}

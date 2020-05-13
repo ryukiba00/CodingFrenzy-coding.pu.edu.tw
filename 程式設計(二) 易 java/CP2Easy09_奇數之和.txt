@@ -1,0 +1,27 @@
+import java.util.*;
+
+class main{
+	public static void main(String args[]){
+	Scanner sc = new Scanner(System.in);
+	
+	// 輸入正整數x, y
+	int x = sc.nextInt();
+	int y = sc.nextInt();
+	
+	// 調整大小
+	if ( x > y ){
+		int temp = x;
+		x = y;
+		y = temp;
+	}
+	
+	int sum = 0;
+	
+	for ( int i = x ; i <= y; i++  ){
+		if ( i % 2 == 1){
+			sum += i;
+		}
+	}
+	System.out.print(sum);
+	}
+}
